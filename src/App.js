@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from "react";
 import "./css/App.css";
 import { Container } from "@material-ui/core";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import BtnGrid from "./components/BtnGrid";
 import MultipleUsers from "./components/MultipleUsers";
 import AllUsers from "./components/AllUsers";
@@ -57,7 +57,7 @@ function App() {
 							<Route path="/react-api-project" exact>
 								<Home user={user} fetchUsers={fetchUsers} />
 							</Route>
-							<Route path="/react-api-project/MultipleUsers" exact>
+							<Route path="/react-api-project/MultipleUsers/">
 								<MultipleUsers
 									appendedUsers={appendedUsers}
 									setAppendedUsers={setAppendedUsers}
@@ -65,7 +65,7 @@ function App() {
 									multipleUsers={multipleUsers}
 								/>
 							</Route>
-							<Route path="/react-api-project/AllUsers" exact>
+							<Route path="/react-api-project/AllUsers/">
 								<AllUsers users={users} />
 							</Route>
 						</Switch>
