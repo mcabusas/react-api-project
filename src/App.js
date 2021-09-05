@@ -54,10 +54,10 @@ function App() {
 							/>
 						</div>
 						<Switch>
-							<Route path="/">
+							<Route path="/react-api-project" exact>
 								<Home user={user} fetchUsers={fetchUsers} />
 							</Route>
-							<Route path="/MultipleUsers">
+							<Route path="/react-api-project/MultipleUsers" exact>
 								<MultipleUsers
 									appendedUsers={appendedUsers}
 									setAppendedUsers={setAppendedUsers}
@@ -65,7 +65,7 @@ function App() {
 									multipleUsers={multipleUsers}
 								/>
 							</Route>
-							<Route path="/AllUsers">
+							<Route path="/react-api-project/AllUsers" exact>
 								<AllUsers users={users} />
 							</Route>
 						</Switch>

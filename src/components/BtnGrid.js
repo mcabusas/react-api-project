@@ -6,7 +6,7 @@ const BtnGrid = ({ allUsers, multipleUsers, fetchUsers }) => {
 	return (
 		<Grid container spacing={2}>
 			<Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
-				<Link to="/">
+				<Link to="/react-api-project">
 					<Button
 						size="large"
 						variant="contained"
@@ -26,7 +26,7 @@ const BtnGrid = ({ allUsers, multipleUsers, fetchUsers }) => {
 			</Grid> */}
 
 			<Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
-				<Link to="/MultipleUsers">
+				<Link to="/react-api-project/MultipleUsers">
 					<Button variant="contained" color="primary" onClick={multipleUsers}>
 						Multiple Users
 					</Button>
@@ -34,7 +34,7 @@ const BtnGrid = ({ allUsers, multipleUsers, fetchUsers }) => {
 			</Grid>
 
 			<Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
-				<Link to="/AllUsers">
+				<Link to="/react-api-project/AllUsers">
 					<Button variant="outlined" color="primary" onClick={allUsers}>
 						All Users
 					</Button>
