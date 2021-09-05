@@ -1,0 +1,42 @@
+body {
+	background: linear-gradient(to bottom right, #0b9694 0%, #e46a97 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.userDiv {
+	margin: auto;
+	width: 10%;
+}
+
+#random-user {
+	margin-top: 50px;
+	margin: auto;
+	width: 50%;
+	height: 430px;
+	background: rgba(200, 54, 54, 0.5);
+	border-radius: 20px;
+	text-align: center;
+	padding: 50px;
+	justify-content: center;
+	align-content: center;
+}
+#random-user > img {
+	border-radius: 20px;
+}
+
+.btn-container {
+	align-items: center;
+	text-align: center;
+	display: flex;
+	min-height: 20vh;
+}
+.user-info {
+	height: 1000px;
+}
+.all-users-name-icon-row {
+	align-items: center;
+}
+#email-icon:hover {
+	color: white;
+}
