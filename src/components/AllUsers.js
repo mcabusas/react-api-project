@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Grid } from "@material-ui/core";
 import SingleAllUsers from "./SingleAllUsers";
-const AllUsers = ({ users }) => {
+const AllUsers = ({ users, allUsers }) => {
+	useEffect(() => {
+		allUsers();
+	}, [allUsers]);
 	return (
 		<div style={{ paddingBottom: "100px" }}>
 			<Grid>

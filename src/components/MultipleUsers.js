@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SingleAllUsers from "./SingleAllUsers";
 import { Grid } from "@material-ui/core";
 import { Button } from "@material-ui/core";
@@ -9,6 +9,9 @@ const MultipleUsers = ({
 	setCurrentPage,
 	multipleUsers,
 }) => {
+	useEffect(() => {
+		multipleUsers();
+	}, []);
 	return (
 		<div style={{ paddingBottom: "100px" }}>
 			<Grid>
